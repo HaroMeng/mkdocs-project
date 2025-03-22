@@ -4,9 +4,11 @@ site_name: My Docs
 nav: 
   - 首页: index.md
   - 堆排序: heap-sort.md
+  - 测试: test.md
   - MkDocs:
     - 安装: mkdocs/mkdocs-install.md
     - callouts语法: mkdocs/callouts.md
+    - 数学公式渲染: mkdocs/mkdocs-mathematical.md
   - 算法学习:
     - 排序算法: algorithms/sorting.md
     - 搜索算法: algorithms/searching.md
@@ -45,9 +47,16 @@ markdown_extensions:
   - admonition  # 启用提示框功能
   - pymdownx.details  # 支持可折叠的提示框
   - pymdownx.superfences  # 支持嵌套代码块
+  - pymdownx.arithmatex: # 支持数学公式
+      generic: true
   # - attr_list  # 支持自定义属性
   # - pymdownx.snippets  # 使用 snippets 扩展
 
+
+extra_javascript:
+#   # - config/tex-mml-chtml.js
+  - http://ylgg.oss-cn-wuhan-lr.aliyuncs.com/files/yaml/tex-mml-chtml.js
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # 社交媒体链接
 extra:
