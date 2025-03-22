@@ -1,0 +1,76 @@
+site_name: My Docs
+# docs_dir: docs
+
+nav: 
+  - 首页: index.md
+  - 堆排序: heap-sort.md
+  - MkDocs:
+    - 安装: mkdocs/mkdocs-install.md
+    - callouts语法: mkdocs/callouts.md
+  - 算法学习:
+    - 排序算法: algorithms/sorting.md
+    - 搜索算法: algorithms/searching.md
+
+
+# 添加主题配置
+theme:
+  name: material
+  features:
+    - content.code.copy  # 启用代码块复制按钮（可选）
+  # 启用夜间模式切换
+  palette:
+    # 亮色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # 暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+
+# 添加版权信息，包含备案信息
+copyright: "Copyright &copy; 2024 My Docs - <a href='https://beian.miit.gov.cn/' target='_blank'>豫ICP备2024052202号-2</a>"
+
+# 添加Markdown扩展配置
+markdown_extensions:
+  - admonition  # 启用提示框功能
+  - pymdownx.details  # 支持可折叠的提示框
+  - pymdownx.superfences  # 支持嵌套代码块
+  # - attr_list  # 支持自定义属性
+  # - pymdownx.snippets  # 使用 snippets 扩展
+
+
+# 社交媒体链接
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HaroMeng
+      name: GitHub
+    - icon: fontawesome/brands/linux
+      link: https://linux.958011209.xyz/
+      name: linux命令大全
+    # 添加工具箱图标
+    - icon: material/tools
+      link: https://tools.958011209.xyz/
+      name: 在线工具箱
+
+
+plugins:
+  - search
+  - callouts
+
+
+social:
+  # 可以添加社交媒体链接
+analytics: 媒体链接
+  # 可以添加分析工具配置
+  # 可以添加分析工具配置
